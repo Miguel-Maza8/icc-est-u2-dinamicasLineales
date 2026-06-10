@@ -10,10 +10,32 @@ public class App {
         runLinkedList(); //Linked list 
         runQueue(); //  Colas 
         runStack();  //Pilas 
+        System.out.println("----Ejercicio 1 ----");
         String texto = "COMPUTACION";
         Ejercicio1 ejercicio1 = new Ejercicio1();
         String invertido = ejercicio1.inveString(texto);
         System.out.println(invertido);
+        System.out.println();
+        
+        System.out.println("----Ejercicio 2-----");
+        System.out.println();
+        System.out.println("-----COMPARACION DE LA PRIMERA PALABRA----");
+        Ejercicio2 comparacion = new Ejercicio2();
+        String texto2 = "radar";
+        texto2.toLowerCase();
+        boolean esPalidromo = comparacion.esPalidromo(texto2);
+        System.out.println(esPalidromo);
+      
+        
+        
+        System.out.println();
+        System.out.println("----COMPARACION DE lA SEGUNDA PALABRA ----");
+         Ejercicio2 comparacion2 = new Ejercicio2();
+        String texto3 = "computacion";
+        texto2.toLowerCase();
+        boolean esPalidromo2 = comparacion2.esPalidromo(texto3);
+        System.out.println(esPalidromo2);
+        System.out.println();
         
     }
 
@@ -82,4 +104,8 @@ public class App {
         System.out.println(nombres.size());// Devuelve el tamanio
 
     }
+     
+    
+
+
 }
